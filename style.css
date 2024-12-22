@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    color: #3e3e3e;
+    font: 17px 'Lato', Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+}
+h1 {
+    margin: 15px 0;
+    font-size: 28px;
+}
+form {
+    display: flex;
+    gap: 1px;
+}
+input {
+    width: 155px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #e7a372;
+    border-radius: 4px;
+    font: 17px 'Lato', Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+}
+button {
+    width: 90px;
+    border: none;
+    border-radius: 3px;
+    color: #fafafa;
+    font: 500 18px 'Lato', Arial, Helvetica, sans-serif;
+    background-color: #e7a372;
+    transition: .4s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #994d17;
+}
+.weather {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    width: 270px;
+    height: 360px;
+    margin-top: 15px;
+    padding: 15px;
+    border: 2px solid #e7a372;
+    border-radius: 5px;
+    background-color: #71e1e9;
+    box-shadow: rgba(31, 31, 158, 0.2) 0px 7px 29px 0px;
+}
+.city {
+    overflow: hidden;
+    display: block;
+    width: 180px;
+    margin-bottom: 11px;
+    color: #eb5e16;
+    font-size: 35px;
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+span {
+    display: block;
+    margin-top: 5px;
+}
+span b {
+    color: #d46618;
+}
+.right {
+    position: relative;
+    padding-top: 50px;
+}
+img {
+    position: absolute;
+    top: -12px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+}
+.temp {
+    color: #1a4488d5;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: right;
+}
+#suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0 0;
+    max-height: 100px;
+    width: 175px;
+    overflow-y: auto;
+    border: none;
+    background-color: #fafafa;
+    position: absolute;
+    z-index: 100;
+}
+
+#suggestions li {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#suggestions li:hover {
+    background-color: #e7a372;
+    color: white;
+}
+
+.message-box {
+    color: red;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 16px;
+}
+
